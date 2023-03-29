@@ -52,8 +52,8 @@ goal = np.linspace(1, 6.2, 10)
 plt.figure(dpi=100)
 plt.scatter(y,cross_val_predict(lr, X, y, cv=crossvalidation))
 plt.plot(goal, goal, 'r--')
-plt.xlabel("DFT (MP) elastic anisotropy");
-plt.ylabel("Predicted\nelastic anisotropy");
+plt.xlabel("DFT (MP) Diffusion Energy Barrier (eV)");
+plt.ylabel("Predicted Diffusion Energy Barrier (eV)");
 
 
 
@@ -81,8 +81,8 @@ print('Folds: %i, mean RMSE: %.3f' % (len(scores), np.mean(np.abs(rmse_scores)))
 plt.figure(dpi=100)
 plt.scatter(y,cross_val_predict(lr, X, y, cv=crossvalidation))
 plt.plot(goal[:350], goal[:350], 'r--')
-plt.xlabel("DFT (MP) elastic anisotropy)");
-plt.ylabel("Random forest\nelastic anisotropy");
+plt.xlabel("DFT (MP) Diffusion Energy Barrier (eV))");
+plt.ylabel("Random forest Diffusion Energy Barrier (eV)");
 
 ##plotting results
 plt.figure(dpi=100)
