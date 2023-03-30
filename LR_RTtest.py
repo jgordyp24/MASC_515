@@ -128,7 +128,7 @@ print('Folds: %i, mean RMSE: %.3f' % (len(scores), np.mean(np.abs(rmse_scores)))
 
 
 plt.figure(dpi=100)
-plt.scatter(y,cross_val_predict(lr, X, y, cv=crossvalidation))
+plt.scatter(y,cross_val_predict(rf, X, y, cv=crossvalidation))
 plt.plot(goal[:350], goal[:350], 'r--')
 plt.xlabel("DFT (MP) elastic anisotropy)");
 plt.ylabel("Random forest\nelastic anisotropy");
